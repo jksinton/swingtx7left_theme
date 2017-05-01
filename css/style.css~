@@ -5,7 +5,7 @@ body {
   color: #333;
   overflow-x: hidden;
   font-weight: 300;
-  height: 100%
+  height: 100%;
 }
 
 html {
@@ -314,29 +314,36 @@ ul.links.inline li {
 
 /*Social Media*/
 
+.social-ribbon {
+  margin: 5px;
+  border: 0;
+  background: #fafafa;
+  color: #fff;
+}
+
 .social-media {
-  text-align: right;
+  text-align: center;
 }
 
 .social-media > a {
   position: relative;
-  top: 20px;
-  width: 32px;
-  height: 32px;
+  /*top: 20px;*/
+  width: 128px;
+  height: 128px;
   background: #00c4ff;
   display: inline-block;
-  border-radius: 32px;
-  -moz-border-radius: 32px 32px 32px 32px;
-  -webkit-border-radius: 32px 32px 32px 32px;
+  border-radius: 128px;
+  -moz-border-radius: 128px 128px 128px 128px;
+  -webkit-border-radius: 128px 128px 128px 128px;
   color: #fff;
-  margin: 1px;
+  margin: 0px 20px;
 }
 
 .social-media > a > .fa {
   position: absolute;
-  left: 32%;
-  top: 30%;
-  font-size: 14px;
+  left: 20%;
+  top: 20%;
+  font-size: 90px;
 }
 
 .social-media .icon-twitter:hover {
@@ -810,6 +817,41 @@ ul.links.inline li {
 
 /*Parallax sections */
 
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  /*height: 600px; */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 .parallax-1 {
   height: 100%;
   width: 100%;
@@ -833,4 +875,24 @@ ul.links.inline li {
   background-size: cover;
 
   background-image: url(../images/parallax-2.jpg);
+}
+section.module.parallax-3 {
+  background-image: url("../img/demo/_small/3.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
 }

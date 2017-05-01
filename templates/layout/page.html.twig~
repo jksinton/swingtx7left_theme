@@ -66,6 +66,16 @@
  */
 #}
 
+<!-- 
+  __,                     _______,  ,  ___    __            
+ (          o            (  /  ( |,'     /   ( /       /)_/_
+  `.  , , ,,  _ _   _,     /     +     -/-    /    _  // /  
+(___)(_(_/_(_/ / /_(_)_  _/   _,'|__   /    (/___/(/_//_(__ 
+                    /|                              /)      
+                   (/                              (/ 
+
+Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
+-->
 <!-- Header and Navbar -->
 <header class="main-header">
 <!-- Sliding Header Widget -->
@@ -106,7 +116,7 @@
     </div>
   {% endif %}
 {% endif %}
-<!--Sliding Header Widget -->
+<!--Header Widget -->
   <nav class="navbar topnav navbar-default" role="navigation">
     <div class="container">
       <div class="row">
@@ -146,15 +156,23 @@
   {% endif %}
   <!-- End Slideshow -->
 
+
 </header>
 <!--End Header & Navbar -->
 
+
 <!-- Top parallax background -->
   {% if is_front %}  
-    <div class="parallax-1">
+  	<!--
+    <div class="banner")
     </div>
+  	-->
+
+	<div class="parallax-1">
+	</div>
   {% endif %}
-<!-- End parallax background -->
+<!-- End Top parallax background -->
+
 
 <!--Search-->
   {% if is_front and page.search %}
@@ -297,11 +315,15 @@
 
       <!--- Start content -->
       {% if page.content %}
-        <div class="content_layout">
-          <div class={{contentlayout}}>
-            {{ page.content }}
-          </div>
-        </div>
+	  <section class="module content">
+		<div class="container">
+			<div class="content_layout">
+			  <div class={{contentlayout}}>
+				{{ page.content }}
+			  </div>
+			</div>
+		</div>
+	  </section>
       {% endif %}
       <!---End content -->
 
@@ -332,14 +354,22 @@
     <!--End Content Bottom-->
   </div>
 </div>
+
+  <!-- Bottom parallax background -->
+  {% if is_front %}  
+  	<!--
+    <div class="banner")
+    </div>
+  	-->
+
+	<div class=" parallax-2">
+	</div>
+  {% endif %}
+  <!-- End Bottom parallax background -->
+
+
 <!-- End layout -->
 
-<!-- Bottom parallax background -->
-  {% if is_front %}  
-    <div class=" parallax-2">
-    </div>
-  {% endif %}
-<!-- End Bottom parallax background -->
 
 <!-- Start Footer -->
 {% if is_front %}  
@@ -415,14 +445,21 @@
   <div class="footer-ribbon">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          {{ page.footer_menu }}
-        </div>
+        {{ page.footer_menu }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+<!-- End Footer Ribbon -->
+
+<!-- Start Social Ribbon -->
+  <div class="social-ribbon">
+    <div class="container">
+      <div class="row">
         {% if show_social_icon %}
-        <div class="col-sm-6">
           <div class="social-media">
             {% if facebook_url %}
-              <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-4"></i></a>
             {% endif %}
             {% if google_plus_url %}
               <a href="{{ google_plus_url }}" class="icon-gplus" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
@@ -442,9 +479,7 @@
       </div>
     </div>
   </div>
-{% endif %}
-<!-- End Footer Ribbon -->
-
+<!-- End Social Ribbon -->
 
 <!-- #footer-bottom -->
 <div id="footer-bottom">

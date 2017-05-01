@@ -332,11 +332,11 @@ ul.links.inline li {
   height: 128px;
   background: #00c4ff;
   display: inline-block;
-  border-radius: 32px;
-  -moz-border-radius: 32px 32px 32px 32px;
-  -webkit-border-radius: 32px 32px 32px 32px;
+  border-radius: 128px;
+  -moz-border-radius: 128px 128px 128px 128px;
+  -webkit-border-radius: 128px 128px 128px 128px;
   color: #fff;
-  margin: 1px;
+  margin: 0px 20px;
 }
 
 .social-media > a > .fa {
