@@ -1,0 +1,5 @@
+# Schema for configuration files of the Bootstrap Mint theme.
+
+swingtx7left_theme.settings:
+  type: theme_settings
+  label: 'Swing TX7 Left Theme settings'
