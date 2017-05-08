@@ -315,10 +315,11 @@ ul.links.inline li {
 /*Social Media*/
 
 .social-ribbon {
-  margin: 5px;
+  margin-bottom: 50px;
   border: 0;
   background: #fafafa;
   color: #fff;
+  height: 10px;
 }
 
 .social-media {
@@ -327,7 +328,7 @@ ul.links.inline li {
 
 .social-media > a {
   position: relative;
-  /*top: 20px;*/
+  top: -64px;
   width: 128px;
   height: 128px;
   background: #00c4ff;
@@ -342,6 +343,13 @@ ul.links.inline li {
 .social-media > a > .fa {
   position: absolute;
   left: 20%;
+  top: 20%;
+  font-size: 90px;
+}
+
+.social-media > a > .fa-facebook {
+  position: absolute;
+  left: 28%;
   top: 20%;
   font-size: 90px;
 }
