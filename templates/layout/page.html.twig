@@ -451,28 +451,35 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
 <!-- End Footer Ribbon -->
 
 <!-- Start Social Ribbon -->
+{% if is_front %}  
+  <div class="social-ribbon front">
+{% else %}  
   <div class="social-ribbon">
+{% endif %}  
     <div class="container">
       <div class="row">
         {% if show_social_icon %}
-          <div class="social-media">
-            {% if facebook_url %}
-              <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-4"></i></a>
-            {% endif %}
-            {% if google_plus_url %}
-              <a href="{{ google_plus_url }}" class="icon-gplus" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
-            {% endif %}
-            {% if twitter_url %}
-              <a href="{{ twitter_url }}" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-            {% endif %}
-            {% if linkedin_url %}
-              <a href="{{ linkedin_url }}" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-            {% endif %}
-            {% if ytube_url %}
-              <a href="{{ ytube_url }}" class="icon-youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-            {% endif %}
-          </div>
-        </div>
+			{% if is_front %}  
+				<div class="social-media front">
+    		{% else %}  
+  				<div class="social-media">
+			{% endif %}  
+        	{% if facebook_url %}
+              		<a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-4"></i></a>
+            	{% endif %}
+				{% if google_plus_url %}
+              		<a href="{{ google_plus_url }}" class="icon-gplus" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+            	{% endif %}
+            	{% if twitter_url %}
+              		<a href="{{ twitter_url }}" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+				{% endif %}
+				{% if linkedin_url %}
+					<a href="{{ linkedin_url }}" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+				{% endif %}
+				{% if ytube_url %}
+					<a href="{{ ytube_url }}" class="icon-youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+				{% endif %}
+        	</div>
         {% endif %}
       </div>
     </div>

@@ -315,6 +315,12 @@ ul.links.inline li {
 /*Social Media*/
 
 .social-ribbon {
+  border: 0;
+  background: #fafafa;
+  color: #fff;
+}
+
+.social-ribbon.front {
   margin-bottom: 50px;
   border: 0;
   background: #fafafa;
@@ -322,20 +328,34 @@ ul.links.inline li {
   height: 10px;
 }
 
+
 .social-media {
   text-align: center;
 }
 
 .social-media > a {
   position: relative;
-  top: -64px;
-  width: 128px;
-  height: 128px;
+  width: 64px;
+  height: 64px;
   background: #00c4ff;
   display: inline-block;
-  border-radius: 128px;
-  -moz-border-radius: 128px 128px 128px 128px;
-  -webkit-border-radius: 128px 128px 128px 128px;
+  border-radius: 64px;
+  -moz-border-radius: 64px 64px 64px 64px;
+  -webkit-border-radius: 64px 64px 64px 64px;
+  color: #fff;
+  margin: 0px 20px;
+}
+
+.social-media.front > a {
+  position: relative;
+  top: -32px;
+  width: 64px;
+  height: 64px;
+  background: #00c4ff;
+  display: inline-block;
+  border-radius: 64px;
+  -moz-border-radius: 64px 64px 64px 64px;
+  -webkit-border-radius: 64px 64px 64px 64px;
   color: #fff;
   margin: 0px 20px;
 }
@@ -344,14 +364,14 @@ ul.links.inline li {
   position: absolute;
   left: 20%;
   top: 20%;
-  font-size: 90px;
+  font-size: 45px;
 }
 
 .social-media > a > .fa-facebook {
   position: absolute;
   left: 28%;
   top: 20%;
-  font-size: 90px;
+  font-size: 45px;
 }
 
 .social-media .icon-twitter:hover {
@@ -869,6 +889,47 @@ ul.links.inline li {
 }
 
 @media screen and (min-width: 768px) {
+	.social-media > a {
+	  position: relative;
+	  width: 128px;
+	  height: 128px;
+	  background: #00c4ff;
+	  display: inline-block;
+	  border-radius: 128px;
+	  -moz-border-radius: 128px 128px 128px 128px;
+	  -webkit-border-radius: 128px 128px 128px 128px;
+	  color: #fff;
+	  margin: 0px 20px;
+	}
+
+	.social-media.front > a {
+	  position: relative;
+	  top: -64px;
+	  width: 128px;
+	  height: 128px;
+	  background: #00c4ff;
+	  display: inline-block;
+	  border-radius: 128px;
+	  -moz-border-radius: 128px 128px 128px 128px;
+	  -webkit-border-radius: 128px 128px 128px 128px;
+	  color: #fff;
+	  margin: 0px 20px;
+	}
+
+	.social-media > a > .fa {
+	  position: absolute;
+	  left: 20%;
+	  top: 20%;
+	  font-size: 90px;
+	}
+
+	.social-media > a > .fa-facebook {
+	  position: absolute;
+	  left: 28%;
+	  top: 20%;
+	  font-size: 90px;
+	}
+
 	.caption {
 		left: 25%;
 		width: 50%;:wq
