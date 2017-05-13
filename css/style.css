@@ -1,6 +1,6 @@
 body {
   font-family: 'Exo 2', sans-serif;
-  font-size: 14px;
+  font-size: large;
   line-height: 160%;
   color: #333;
   overflow-x: hidden;
@@ -22,25 +22,25 @@ p {
 
 h1,
 .h1 {
-  font-size: 18px;
+  font-size: xx-large;
   color: #000;
 }
 
 h2,
 .h2 {
-  font-size: 16px;
+  font-size: x-large;
   color: #000;
 }
 
 h3,
 .h3 {
-  font-size: 15px;
+  font-size: large;
   color: #000;
 }
 
 h4,
 .h4 {
-  font-size: 14px;
+  font-size: medium;
   color: #000;
 }
 
