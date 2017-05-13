@@ -78,44 +78,6 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
 -->
 <!-- Header and Navbar -->
 <header class="main-header">
-<!-- Sliding Header Widget -->
-{% if is_front %}
-  {% if page.sliding_header_one or page.sliding_header_two %}
-    <div class="slidewidget">
-	<div class="wrapper">
-      <!-- start: Container -->
-      <div class="container">
-        
-        <div class="row">
-          <div id="sliding-header-wrap">
-          <!-- Slide first region -->
-          
-          {% if page.sliding_header_one %}
-            <div class = {{ slidewidget_first }}>
-              {{ page.sliding_header_one }}
-            </div>
-          {% endif %}
-          
-          <!-- End slide first region -->
-          <!-- Slide second region -->
-          
-          {% if page.sliding_header_two %}
-            <div class = {{ slidewidget_class }}>
-              {{ page.sliding_header_two }}
-            </div>
-          {% endif %}
-          
-          <!-- End slide second region -->
-          
-		  </div>
-        </div>
-      </div>
-	  <!-- end: Container -->
-	  </div>
-	  <div class="toggle-switch"><div class="fa fa-gear fa-spin"></div></div>
-    </div>
-  {% endif %}
-{% endif %}
 <!--Header Widget -->
   <nav class="navbar topnav navbar-default" role="navigation">
     <div class="container">
@@ -143,20 +105,6 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
       </div>
     </div>
   </nav>
-
-  <!-- Slideshow -->
-  {% if is_front and page.slideshow %}  
-    <div class="container slideshow">
-      <div class="row">
-        <div class="col-md-12">
-            {{ page.slideshow }}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-  <!-- End Slideshow -->
-
-
 </header>
 <!--End Header & Navbar -->
 
@@ -179,31 +127,6 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
 <!--End Search-->
 
 
-<!--Home page banner-->
-  {% if is_front and page.promo %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          {{ page.promo }}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-<!--End Home page banner-->
-
-
-<!--Highlighted-->
-  {% if page.highlighted %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          {{ page.highlighted }}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-<!--End Highlighted-->
-
 <!--Help-->
   {% if page.help %}
     <div class="container">
@@ -215,49 +138,6 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
     </div>
   {% endif %}
 <!--End Help-->
-
-<!-- Start Top Widget -->
-{% if is_front %}  
-  {% if page.topwidget_left or page.topwidget_middle or page.topwidget_right %}
-    <div class="topwidget">
-      <!-- start: Container -->
-      <div class="container">
-        
-        <div class="row">
-
-          <!-- Top widget left region -->
-          
-          {% if page.topwidget_left %}
-            <div class = {{ topwidget_class }}>
-              {{ page.topwidget_left }}
-            </div>
-          {% endif %}
-          
-          <!-- End top widget left region -->		  
-          <!-- Top widget middle region -->
-          
-          {% if page.topwidget_middle %}
-            <div class = {{ topwidget_class }}>
-              {{ page.topwidget_middle }}
-            </div>
-          {% endif %}
-          
-          <!-- End top widget middle region -->
-          <!-- Top widget right region -->
-          
-          {% if page.topwidget_right %}
-            <div class = {{ topwidget_class }}>
-              {{ page.topwidget_right }}
-            </div>
-          {% endif %}
-          
-          <!-- End top widget right region -->
-        </div>
-      </div>
-    </div>
-  {% endif %}
-{% endif %}
-<!--End Top Widget -->
 
 
 <!-- Page Title -->
@@ -280,37 +160,9 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
   <div class="container-fluid">
   <div class="container">
     
-    <!--Start Content Top-->
-    {% if is_front and page.content_top %}
-    <div class="content-top">
-        <div class="row">
-		  <div class="col-md-12">
-            {{ page.content_top }}
-		  </div>
-        </div>
-	</div>
-    {% endif %}
-    <!--End Content Top-->
-    
-    <!--start:Breadcrumbs -->
-	{%  if not is_front %}
-    <div class="row">
-      <div class="col-md-12">{{ page.breadcrumb }}</div>
-    </div>
-	{% endif %}
-    <!--End Breadcrumbs-->
 	
     <div class="row layout">
-      <!--- Start Left Sidebar -->
-      {% if page.sidebar_first %}
-        <div class="sidebar" >
-          <div class = {{sidebarfirst}} >
-            {{ page.sidebar_first }}
-          </div>
-        </div>
-      {% endif %}
-      <!---End Left Sidebar -->
-
+     
       <!--- Start content -->
       {% if page.content %}
 	  <section class="module content">
@@ -325,118 +177,40 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
       {% endif %}
       <!---End content -->
 
-      <!--- Start Right Sidebar -->
-      {% if page.sidebar_second %}
-        <div class="sidebar">
-          <div class={{sidebarsecond}}>
-            {{ page.sidebar_second }}
-          </div>
-        </div>
-      {% endif %}
-      <!---End Right Sidebar -->
       
     </div>
     </div>
     <!--End Content -->
-
-    <!--Start Content Bottom-->
-    {% if is_front and page.content_bottom %}
-    <div class="content-bottom">
-        <div class="row">
-		  <div class="col-md-12">
-            {{ page.content_bottom }}
-		  </div>
-        </div>
-	</div>
-    {% endif %}
-    <!--End Content Bottom-->
+    
   </div>
 </div>
 
-  <!-- Bottom parallax background -->
-  {% if is_front %}  
-  	<!--
-    <div class="banner")
-    </div>
-  	-->
-
-	<div class=" parallax-2">
-	</div>
-  {% endif %}
-  <!-- End Bottom parallax background -->
-
-
 <!-- End layout -->
+  
 
-
-<!-- Start Footer -->
+<!-- Middle  parallax background -->
 {% if is_front %}  
-  {% if page.footer_top_one or page.footer_top_two or page.footer_top_three or page.footer_top_four %}
-    <div class="footer-widgets">
-      <!-- Start Container -->
-      <div class="container">
-        
-        <div class="row">
-
-          <!-- Start Footer Top One Region -->
-          
-          {% if page.footer_top_one %}
-            <div class = {{ footer_top_class }}>
-              {{ page.footer_top_one }}
-            </div>
-          {% endif %}
-          
-          <!-- End Footer Top One Region -->
-
-          <!-- Start Footer Top Two Region -->
-          {% if page.footer_top_two %}
-            <div class = {{ footer_top_class }}>
-              {{ page.footer_top_two }}
-            </div>
-          {% endif %}
-          
-          <!-- End Footer Top Two Region -->
-
-          <!-- Start Footer Top Three Region -->
-          
-          {% if page.footer_top_three %}
-            <div class = {{ footer_top_class }}>
-              {{ page.footer_top_three }}
-            </div>
-          {% endif %}
-          
-          <!-- End Footer Top Three Region -->
-		  
-		  <!-- Start Footer Top Four Region -->
-
-          {% if page.footer_top_four %}
-          <div class = {{ footer_top_class }}>
-            {{ page.footer_top_four }}
-          </div>
-          {% endif %}
-		  
-		  <!-- End Footer Top Four Region -->
-
-        </div>
-      </div>
-    </div>
-  {% endif %}
-  <!-- Footer Region-->
-  {% if page.footer %}
-    <div class="footer-space">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            {{ page.footer }}
-          </div>
-      </div>
-      </div>
-	</div>
-  {% endif %}
-  <!-- End Footer Region-->
+  <div class=" parallax-2">
+  </div>
 {% endif %}
-<!--End Footer -->
+<!-- End Middle  parallax background -->
 
+<!-- Grid Panel One -->
+{% if is_front %}  
+      {% if page.grid_panel_one %}
+      	<div class="container">
+			{{ page.grid_panel_one }}
+		</div>
+
+	    <!-- Bottom  parallax background -->
+	    {% if is_front %}  
+		  <div class="parallax-2">
+		  </div>
+	    {% endif %}
+	    <!-- End Bottom  parallax background -->
+	  {% endif %}
+{% endif %}
+<!-- End  Grid Panel One-->
 
 <!-- Start Footer Ribbon -->
 {% if page.footer_menu %}
@@ -499,7 +273,7 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
         <div class="col-md-12 copy_credit">
         <!-- <p class="copyright">Copyright &copy; {{ "now"|date("Y") }}. All rights reserved.</p> -->
         <p class="credit"><a href="/privacy-policy" target="_blank">Privacy Policy</a></p>
-        <p class="credit"><a href="/Disclaimer" target="_blank">Disclaimer</a></p>
+        <p class="credit"><a href="/disclaimer" target="_blank">Disclaimer</a></p>
 	
         {% if show_credit_link %}
           <p class="credit">Theme for <a href="https://www.drupal.org/8" target="_blank">Drupal 8</a></p>

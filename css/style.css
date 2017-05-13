@@ -843,6 +843,25 @@ ul.links.inline li {
   margin: 5px 0 10px 0;
 }
 
+/*Candidates */
+
+.candidate-name {
+	text-align: center;
+}
+.candidate-name p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+.candidate-img img {
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 20px auto;
+  display: block;
+
+}
+
 /*Parallax sections */
 
 .parallax-1 {
@@ -857,6 +876,7 @@ ul.links.inline li {
 
   background-image: url(../images/parallax-1.jpg);
 }
+
 .parallax-2 {
   height: 100%;
   width: 100%;
@@ -868,6 +888,19 @@ ul.links.inline li {
   background-size: cover;
 
   background-image: url(../images/parallax-2.jpg);
+}
+
+.parallax-3 {
+  height: 100%;
+  width: 100%;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url(../images/parallax-3.jpg);
 }
 
 .caption {
@@ -888,7 +921,22 @@ ul.links.inline li {
     /*letter-spacing: 10px; */
 }
 
+/*
+ *
+ * Responsive CSS
+ *
+ */
+
 @media screen and (min-width: 768px) {
+	/*Candidates */
+	.candidate-img img {
+	  border-radius: 20px;
+	  height: 200px;
+	  width: 200px;
+      margin: 0 auto 20px auto;
+	  display: block;
+	}
+
 	.social-media > a {
 	  position: relative;
 	  width: 128px;
