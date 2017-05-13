@@ -845,6 +845,11 @@ ul.links.inline li {
 
 /*Candidates */
 
+#block-views-block-candidates-block-1 h2 {
+  font-size: x-large; 
+  text-align: center;
+}
+
 .candidate-name {
 	text-align: center;
 }
