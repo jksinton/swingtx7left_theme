@@ -34,9 +34,8 @@
   $('#toTop a').click(function () {
     $('body,html').animate({scrollTop: 0}, 1000);
   });
-})(jQuery);
 
-$(document).scroll(function(e){
+  $(document).scroll(function(e){
 	var range = 200;
 	var target = $('.caption div.border');
 	var scrollTop = $(this).scrollTop();
@@ -52,4 +51,7 @@ $(document).scroll(function(e){
 	} else if ( calc < '0' ) {
 		target.css({ 'opacity': 0 });
 	}
-});
+  });
+})(jQuery);
+
+
