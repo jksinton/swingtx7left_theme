@@ -36,13 +36,10 @@
   });
 
   $(document).scroll(function(e){
-	var range = 200;
 	var target = $('.caption div.border');
 	var scrollTop = $(this).scrollTop();
-	var offset = target.offset().top;
 	var height = target.outerHeight();
-	offset = offset + height / 2;
-	var calc = 1 - (scrollTop - offset + range) / range;
+	var calc = 1 - (scrollTop - height) / height;
 
 	target.css({ 'opacity': calc });
 
