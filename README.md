@@ -35,68 +35,7 @@ THEME REGIONS
 -------------
 Swing TX-7 Left Theme provides these theme regions:
 
-* Update this
-
-+-----------------------------------------+
-| +-----------------+-------------------+ |
-| |      Sliding    |     Sliding       | |
-| |    Header Left  |   Header Right    | |
-| +-----------------+-------------------+ |
-| +-------------------------------------+ |
-| |              Header                 | |
-| +-------------------------------------+ |
-| |           Primary Menu              | |
-| +-------------------------------------+ |
-| |            Slideshow                | |
-| +-------------------------------------+ |
-| +-------------------------------------+ |
-| |             Search                  | |
-| +-------------------------------------+ |
-| +-------------------------------------+ |
-| |         Promotion Banner            | |
-| +-------------------------------------+ |
-| +-------------------------------------+ |
-| |           Highlighted               | |
-| +-------------------------------------+ |
-| +-------------------------------------+ |
-| |              Help                   | |
-| +-------------------------------------+ |
-| +------------+------------+-----------+ |
-| | Top Widget | Top Widget | Top Widget| |
-| |   Left     |  Middle    |   Right   | |
-| +------------+------------+-----------+ |
-| +---------+ +---------------+---------+ |
-| |         | |  Content Top  |         | |
-| |         | +---------------+         | |
-| |         | |  Breadcrumbs  |         | |
-| |         | +---------------+         | |
-| | Sidebar | +---------------+ Sidebar | |
-| |  Left   | |   Page Title  |  Right  | |
-| |         | +---------------+         | |
-| |         | |    Content    |         | |
-| |         | +---------------+         | |
-| |         | |Content Bottom |         | |
-| +---------+ +---------------+---------+ |
-| +--------+---------+---------+--------+ |
-| | Footer |  Footer |  Footer | Footer | |
-| | Top1   |  Top2   |  Top3   | Top4   | |
-| +--------+---------+---------+--------+ |
-| |               Footer                | |
-| +-------------------------------------+ |
-| |            Footer Menu              | |
-| +-------------------------------------+ |
-+-----------------------------------------+
-
-As you can see, Swing TX-7 Left theme support multiple columns in the top, middle
- and footer area. Width of a column gets dynamically calculated at run time. For
- example, the 'Footer Top' region (i.e. Footer Top 1 + Footer Top 2 + Footer Top
- 3 + Footer Top 4) can host max of 4 blocks in a row. In the event of having 
- only 3 blocks, each block will occupy 33.33% of the full width.
-
-'Sliding Header' regions at the top can be toggled on/off.
-
-This theme also packs an additional region - 'Optional Blocks' with it, to hold 
-optional core blocks like 'Primary admin actions'.
+TODO Update this with an image
 
 REQUIREMENTS
 ------------
@@ -112,7 +51,7 @@ INSTALLATION
 MAINTAINERS
 -----------
 Current maintainer:
- * James Sinton - https://github.com/jksinton/swingtx7left_theme
+ * James Sinton - james {at} jksinton.com
 
 CREDITS
 -------

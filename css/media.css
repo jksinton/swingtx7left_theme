@@ -1,5 +1,108 @@
 @media (min-width: 768px) {
 
+  /* Intro Scroll */
+ .intro-scroll#section-wipes {
+	height: 100%;
+	width: 100%;
+	background-image: none;
+  }
+  .mobile-intro {
+	  display: none;
+  }
+  
+  .caption {
+	position: absolute;
+	text-align: center;
+
+  }
+
+  .texas-flag-bg {
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/texas-flag.png);
+  }
+
+  .caption div.border {
+    background: rgba(0,0,0,0.3);
+    padding: 50px 30px 30px 30px;
+    display: inline;
+    border-radius: 20px;
+  }
+
+  div#space-after-intro {
+    height: 630%;
+  }
+
+  section#next-section {
+    position: absolute;
+    top: 600%; /*set this as the buffer between the scroll animation and the next section */
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-header {
+    position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	background-size: cover;
+  }
+
+  /*Candidates */
+  .candidate-img img {
+	  border-radius: 20px;
+	  height: 200px;
+	  width: 200px;
+      margin: 0 auto 20px auto;
+	  display: block;
+  }
+
+  /*Social Media Footer */
+  .social-media > a {
+	  position: relative;
+	  width: 128px;
+	  height: 128px;
+	  background: #00c4ff;
+	  display: inline-block;
+	  border-radius: 128px;
+	  -moz-border-radius: 128px 128px 128px 128px;
+	  -webkit-border-radius: 128px 128px 128px 128px;
+	  color: #fff;
+	  margin: 0px 20px;
+  }
+
+  .social-media.front > a {
+	  position: relative;
+	  top: -64px;
+	  width: 128px;
+	  height: 128px;
+	  background: #00c4ff;
+	  display: inline-block;
+	  border-radius: 128px;
+	  -moz-border-radius: 128px 128px 128px 128px;
+	  -webkit-border-radius: 128px 128px 128px 128px;
+	  color: #fff;
+	  margin: 0px 20px;
+  }
+
+  .social-media > a > .fa {
+	  position: absolute;
+	  left: 20%;
+	  top: 20%;
+	  font-size: 90px;
+  }
+
+  .social-media > a > .fa-facebook {
+	  position: absolute;
+	  left: 28%;
+	  top: 20%;
+	  font-size: 90px;
+  }
+
   .contact-message-feedback-form {
     max-width: 650px;
     margin: 0 auto;

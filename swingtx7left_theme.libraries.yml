@@ -46,6 +46,61 @@ smart-menus:
   js:
     https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0/jquery.smartmenus.min.js: { type: external, minified: true }
 
+tweenmax:
+    remote: https://greensock.com/tweenmax 
+    version: latest
+    license:
+        name: Standard No Charge GreenSock License
+        url: https://greensock.com/standard-license
+    js:
+      https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js: {type: externa, minified: true}
+
+draggable:
+    remote:  http://greensock.com
+    version: latest
+    license:
+        name: Standard No Charge GreenSock License
+        url: http://greensock.com/standard-license
+    js:
+        https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js: { type: external, minified: true}
+
+scrollmagic:
+    remote: http://scrollmagic.io/
+    version: 2.0.5
+    license:
+        name: MIT
+        url: https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md
+    js:
+        https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js: { type: external, minified: true }
+
+scrollmagic-debug-plugin:
+    remote: http://scrollmagic.io/
+    version: 2.0.5
+    license:
+        name: MIT
+        url: https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md
+    js:
+        https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js: { type: external, minified: true }
+    dependencies:
+        - swingtx7left_theme/scrollmagic
+
+scrollmagic-animation-plugin:
+    remote: http://scrollmagic.io/
+    version: 2.0.5
+    license:
+        name: MIT
+        url: https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md
+    js:
+        https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js: { type: external, minified: true }
+    dependencies:
+        - swingtx7left_theme/scrollmagic
+
+intro-scroll:
+    js:
+        js/intro-scroll.js: {}
+    dependencies:
+        - swingtx7left_theme/scrollmagic
+
 global-components:
   Version: VERSION
   css:

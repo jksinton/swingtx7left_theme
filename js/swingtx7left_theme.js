@@ -35,6 +35,7 @@
     $('body,html').animate({scrollTop: 0}, 1000);
   });
 
+/*
   $(document).scroll(function(e){
 	var target = $('.caption div.border');
 	var scrollTop = $(this).scrollTop();
@@ -49,6 +50,7 @@
 		target.css({ 'opacity': 0 });
 	}
   });
+  */
 })(jQuery);
 
 
