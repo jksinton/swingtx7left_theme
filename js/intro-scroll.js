@@ -21,7 +21,7 @@
 			target.css({ 'opacity': opacity });
 
 			if ( opacity > '1' ) {
-					target.css({ 'opacity': 1 , 'display': 'inline-block'});
+					target.css({ 'opacity': 1 , 'display': 'block'});
 
 			} else if ( opacity < '0' ) {
 					target.css({ 'opacity': 0, 'display': 'none'});

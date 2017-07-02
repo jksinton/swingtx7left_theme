@@ -125,11 +125,11 @@ ul.links.inline li {
 }
 
 .brand.logo img {
-  /*width: 37px;*/
+  width: 75%;
 }
 
 .region-header .brand {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   line-height: 100%;
   padding: 9px 0;
@@ -869,6 +869,12 @@ ul.links.inline li {
   margin: 0 auto 20px auto;
   display: block;
 }
+
+/* Page-title padding for mobile */
+div#page-title {
+	padding-top: 50px;
+}
+
 
 /* 
  * Intro Texas Flag Theme

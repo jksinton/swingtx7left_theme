@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+  
+  .brand.logo img {
+    width: 100%;
+  }
 
   /* Intro Scroll */
  .intro-scroll#section-wipes {
@@ -499,5 +503,6 @@
     color: #00c4ff !important;
     text-transform: uppercase;
   }
+
 
 }
