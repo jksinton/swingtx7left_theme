@@ -1,4 +1,4 @@
-# Schema for configuration files of the Bootstrap Mint theme.
+# Schema for configuration files of the Swing TX-07 Left theme.
 
 swingtx7left_theme.settings:
   type: theme_settings

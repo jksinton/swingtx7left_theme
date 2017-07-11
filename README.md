@@ -1,4 +1,4 @@
-# Swing TX-7 Left Drupal Theme
+# Swing TX-07 Left Drupal Theme
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -14,7 +14,7 @@ CONTENTS OF THIS FILE
 
 INTRODUCTION
 ------------
-Swing TX-7 Left Theme is a mobile-first Drupal 8 theme. Built on the powerful Bootstrap
+Swing TX-07 Left Theme is a mobile-first Drupal 8 theme. Built on the powerful Bootstrap
  3.x Framework, this multi-purpose theme is compatible with Drupal 8.1.x.
 
 THEME FEATURES
@@ -33,7 +33,7 @@ and more..
 
 THEME REGIONS
 -------------
-Swing TX-7 Left Theme provides these theme regions:
+Swing TX-07 Left Theme provides these theme regions:
 
 TODO Update this with an image
 
@@ -46,7 +46,7 @@ INSTALLATION
 1. Drupal 8 site (preferrably using Standard installation profile).
 2. Place "swingtx7left_theme" folder to the root /themes directory.
 3. Login to the site and click on "Appearance" in the top Administration menu.
-4. Click on "Install and set as default" next to Swing TX-7 Left theme.
+4. Click on "Install and set as default" next to Swing TX-07 Left theme.
 
 MAINTAINERS
 -----------

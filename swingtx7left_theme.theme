@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains Swing TX-7 Left theme override and preprocess functions.
+ * Contains Swing TX-07 Left theme override and preprocess functions.
  */
 
 use Drupal\Core\Form\FormStateInterface;
