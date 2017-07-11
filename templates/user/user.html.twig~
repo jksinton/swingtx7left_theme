@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Swing TX-07 Left's theme override to present all user data.
+ * Bootstrap Mint's theme override to present all user data.
  *
  * This template is used when viewing a registered user's page,
  * e.g., example.com/user/123. 123 being the user's ID.

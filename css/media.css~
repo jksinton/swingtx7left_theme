@@ -1,9 +1,5 @@
 @media (min-width: 768px) {
   
-  div#page-title {
-	padding-top: 50px;
-  }
-  
   .brand.logo img {
     width: 100%;
   }
@@ -422,6 +418,9 @@
 
 @media (max-width: 767px) {
 
+  div#page-title {
+	padding-top: 50px;
+  }
 
   .footer-ribbon ul.menu,
   .footer-ribbon .social-media {
