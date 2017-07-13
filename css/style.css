@@ -5,11 +5,7 @@ body {
   color: #333;
   overflow-x: hidden;
   font-weight: 300;
-  height: 100%;
-}
-
-html {
-  height: 100%;
+  background-color: #fff;
 }
 
 .container {
@@ -87,22 +83,11 @@ ul.links.inline li {
   text-transform: uppercase;
 }
 
-.main-header {
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-
-}
-
 .main-header nav {
-  background: #fff;
   border: 0;
   margin: 0;
   position: relative;
   z-index: 999;
-  min-height: auto;
 }
 
 .main-header .region {
@@ -125,9 +110,13 @@ ul.links.inline li {
 }
 
 .brand.logo img {
-  width: 75%;
+  width: 100%;
 }
 
+.region-header  {
+	display: inline-block;
+	width: 70%;
+}
 .region-header .brand {
   display: block;
   vertical-align: middle;
@@ -256,6 +245,7 @@ ul.links.inline li {
   border: 0;
   background: #fafafa;
   color: #fff;
+  position: relative;
 }
 
 .footer-ribbon ul {
@@ -462,111 +452,17 @@ input[type="submit"]:hover {
 }
 
 /*Menu*/
-nav.navbar.topnav {
 
-}
-
-.navbar-default .navbar-toggle {
-  margin-right: 0;
-  border: 0;
-  color: #fff;
-  background: none;
-  padding: 6px 6px;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #00c4ff;
-}
-
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 35px;
-  height: 4px;
-  border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-}
-
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background: none;
-}
-
-nav h2 {
-  display: none;
-}
-
-.menu-base-theme a,
-.menu-base-theme a:hover,
-.menu-base-theme a:focus,
-.menu-base-theme a:active {
-  padding: 10px 20px;
-  padding-right: 58px;
-  line-height: 23px;
-  text-decoration: none;
-}
-
-.menu-base-theme a.current {
-  background: #006892;
-  color: white;
-}
-
-.menu-base-theme a.disabled {
-  color: #a1d1e8;
-}
-
-.menu-base-theme a span.sub-arrow {
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  left: auto;
-  right: 4px;
-  width: 34px;
-  height: 34px;
-  overflow: hidden;
-  text-align: center;
-  color: #999;
-  font-size: 22px;
-  padding: 5px;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border: 1px solid #dcdcdc;
-  background: #efefef;
-}
-
-.menu-base-theme a.highlighted span.sub-arrow:before {
-  display: block;
-  content: '-';
-}
-
-.menu-base-theme ul {
-  background: white;
-}
-
-.menu-base-theme ul ul {
-  background: rgba(102, 102, 102, 0.1);
-}
-
-.menu-base-theme ul li {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.menu-base-theme ul li:first-child {
-  border-top: 0;
-}
-
-.region-primary-menu {
-  display: none;
-  background: #fff;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+.navbar-header {
+  position: fixed;
+  top: 0;
   width: 100%;
+  background: #fafafa;
+  border-bottom: 2px solid #00c4ff;
 }
 
-.navbar-toggle {
-  z-index: 999;
+#mmenu-page-wrapper {
+	height: 100vh;
 }
 
 /*Breadcrumb*/
@@ -761,27 +657,6 @@ ul.links.inline li {
   padding-right: 10px;
 }
 
-/*Carousel*/
-
-.carousel-caption p,
-.carousel-caption h3 {
-  display: none;
-}
-
-.carousel-caption h3 {
-  margin-top: 0;
-}
-
-.carousel-indicators li {
-  border: 1px solid #00c4ff;
-}
-
-.carousel-indicators .active {
-  background-color: #00c4ff;
-  height: 10px;
-  width: 10px;
-}
-
 /*Profile Page*/
 
 .path-user .profile >div {
@@ -791,69 +666,6 @@ ul.links.inline li {
 .path-user .profile .label {
   display: block;
   color: #333;
-}
-
-/*Sliding header widget*/
-
-.slidewidget {
-  background: transparent;
-  left: 0;
-  position: absolute;
-  top: 49px;
-  width: 100%;
-  height: 0;
-}
-
-.slidewidget #sliding-header-wrap {
-  display: none;
-  color: #333;
-  position: relative;
-  z-index: 13;
-}
-
-.slidewidget .wrapper {
-  position: relative;
-  z-index: 100;
-  background-color: #32ecc8;
-  border-bottom: 2px solid #00c4ff;
-}
-
-.slidewidget .toggle-switch {
-  background-color: #00c4ff;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 49px;
-  height: 49px;
-  z-index: 250;
-}
-
-.slidewidget .fa-gear.fa-spin {
-  color: #fff;
-  cursor: pointer;
-  font-size: 24px;
-  left: 25%;
-  position: absolute;
-  text-align: center;
-  top: 25%;
-}
-
-.slidewidget img.left {
-  float: left;
-  margin: 10px 10px 0 0;
-  width: 50%;
-}
-
-.slidewidget ul {
-  padding-left: 15px;
-}
-
-.slidewidget .block {
-  padding: 20px 10px 10px;
-}
-
-.slidewidget .block h2.title {
-  margin: 5px 0 10px 0;
 }
 
 /*Candidates */
@@ -884,153 +696,40 @@ div#page-title {
 	padding-top: 80px;
 }
 
+/*Frontpage parallax sections */
 
-/* 
- * Intro Texas Flag Theme
- *
- */
-.mobile-intro{
-	display: block;
-	height: 100%;
-}
-	
-#scroll-wrapper {
-  height: 100%;
+.frontpage-spacing {
+	padding-top: 100vh;
 }
 
-.scrollContent {
-	width: 100%;
-	height: auto;
+.frontpage-spacing-2 {
+	padding-top: 50vh;
 }
 
-section#next-section {
-	position: absolute;
-	top: 650%; /*set this as the buffer between the scroll animation and the next section */
-	width: 100%;
-	height: 100%;
+div#wrapper {
+	position: relative;
+	background: white;
 }
-
-.texas-blue-1 {
-	background-color: #002868;
-}
-.texas-white {
-	background-color: #FFFFFF;
-}
-.texas-red {
-	background-color: #bf0a30;
-}
-.texas-blue-2 {
-	background-color: #002868;
-}
-
-.texas-flag-bg {
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: 5%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/texas-flag.png);
-}
-
-.caption {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    text-align: center;
-}
-
-div.left-bar {
-  position: relative;
-  left: 0px;
-  height: 50%;
-  top: 30%;
-}
-
-div.right-bar {
-  position: relative;
-  right: 0px;
-  height: 50%;
-  top: 30%;
-}
-
-.caption div.border {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 50px 30px 30px 30px;
-    border-radius: 20px;
-}
-
-div.border b {
-  color: #fff;
-  font-size: xx-large;
-}
-
-.intro-panel > b {
-	font-size: xx-large;
-	color: white;
-}
-
-.star-left img {
-  position: absolute;
-  left: 0%;
-  height: 100%;
-}
-
-.star-right img {
-  position: absolute;
-  right: 0%;
-  height: 100%;
-}
-
-.intro-scroll#section-wipes {
-    /*
-	position: absolute;
-    top: 0;
-	*/
-	height: 100%;
-	width: 100%;
-	background-image: none;
-}
-
-#pinContainer {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.intro-panel {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: absolute;
-}
-
-section.intro-scroll {
-	font-size: 0;
-	text-align: center;
-	/*background-image: url("../img/example_bg_v.png"); */
-}
-
-/*Prallax sections */
 
 .parallax-1 {
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  opacity: 0.7;
   background-image: url(../images/parallax-1.jpg);
 }
 
 .parallax-2 {
   height: 100%;
   width: 100%;
+  position: absolute;
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -1053,21 +752,19 @@ section.intro-scroll {
 
   background-image: url(../images/parallax-3.jpg);
 }
-/*
 .caption {
     position: absolute;
+    background-color: rgba(0,0,0,0.7);
     left: 0;
-    top: 50%;
+    top: 30%;
     width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
     text-align: center;
     color: #000;
 }
 
-.caption div.border {
-    background-color: #00c4ff;
+.caption span {
     color: #fff;
-    padding: 18px;
     font-size: 25px;
-	border-radius: 20px;
-    /*letter-spacing: 10px;
-}*/
+}

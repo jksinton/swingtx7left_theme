@@ -8,11 +8,7 @@ libraries:
   - swingtx7left_theme/bootstrap
   - swingtx7left_theme/googlefonts-exo2
   - swingtx7left_theme/font-awesome
-  - swingtx7left_theme/smart-menus
-  - swingtx7left_theme/tweenmax
-  - swingtx7left_theme/scrollmagic
-  - swingtx7left_theme/scrollmagic-debug-plugin
-  - swingtx7left_theme/scrollmagic-animation-plugin
+  - swingtx7left_theme/mmenus
   - swingtx7left_theme/global-components
   - swingtx7left_theme/maintenance-page
 

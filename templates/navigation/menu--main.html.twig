@@ -27,7 +27,8 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul class="sm menu-base-theme" id="main-menu" {{ attributes.addClass('menu', 'nav', 'navbar-nav') }}>
+      <nav id="main-menu">
+      <ul>
     {% else %}
       <ul>
     {% endif %}
@@ -40,10 +41,11 @@
         {{ link(item.title, item.url) }}
       {% endif %}
       {% if item.below %}
-        {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
+        {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
       {% endif %}
       </li>
     {% endfor %}
     </ul>
+    </nav>
   {% endif %}
 {% endmacro %}

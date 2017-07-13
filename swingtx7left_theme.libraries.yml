@@ -33,73 +33,19 @@ font-awesome:
     theme:
       https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css: { type: external, minified: true }
 
-smart-menus:
-  remote: http://www.smartmenus.org/
-  version: 1.0.0
+mmenus:
+  remote: http://mmenu.frebsite.nl/
+  version: 6.1.
   license:
-    name: MIT
-    url: https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
+    name: Creative Commons Attribution-NonCommercial 4.0 International
     gpl-compatible: false
   css:
     theme:
-      https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0/css/sm-core-css.css: { type: external, minified: false }
+        css/jquery.mmenu.all.css: {}
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0/jquery.smartmenus.min.js: { type: external, minified: true }
-
-tweenmax:
-    remote: https://greensock.com/tweenmax 
-    version: latest
-    license:
-        name: Standard No Charge GreenSock License
-        url: https://greensock.com/standard-license
-    js:
-      https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js: {type: externa, minified: true}
-
-draggable:
-    remote:  http://greensock.com
-    version: latest
-    license:
-        name: Standard No Charge GreenSock License
-        url: http://greensock.com/standard-license
-    js:
-        https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js: { type: external, minified: true}
-
-scrollmagic:
-    remote: http://scrollmagic.io/
-    version: 2.0.5
-    license:
-        name: MIT
-        url: https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md
-    js:
-        https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js: { type: external, minified: true }
-
-scrollmagic-debug-plugin:
-    remote: http://scrollmagic.io/
-    version: 2.0.5
-    license:
-        name: MIT
-        url: https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md
-    js:
-        https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js: { type: external, minified: true }
-    dependencies:
-        - swingtx7left_theme/scrollmagic
-
-scrollmagic-animation-plugin:
-    remote: http://scrollmagic.io/
-    version: 2.0.5
-    license:
-        name: MIT
-        url: https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md
-    js:
-        https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js: { type: external, minified: true }
-    dependencies:
-        - swingtx7left_theme/scrollmagic
-
-intro-scroll:
-    js:
-        js/intro-scroll.js: {}
-    dependencies:
-        - swingtx7left_theme/scrollmagic
+      js/jquery.mmenu.all.js: {}
+  dependecies:
+    - core/jquery
 
 global-components:
   Version: VERSION
@@ -108,6 +54,7 @@ global-components:
       css/base.css: {}
       css/style.css: {}
       css/media.css: {}
+      css/hamburgers.css: {}
   js:
     js/swingtx7left_theme.js: {}
   dependencies:
@@ -116,6 +63,7 @@ global-components:
     - core/drupal
     - core/drupalSettings
     - core/jquery.once
+    - swingtx7left_theme/mmenus
 
 maintenance-page:
   version: VERSION
