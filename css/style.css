@@ -116,6 +116,7 @@ ul.links.inline li {
 .region-header  {
 	display: inline-block;
 	width: 70%;
+	vertical-align: middle;
 }
 .region-header .brand {
   display: block;
@@ -265,6 +266,8 @@ ul.links.inline li {
 #footer-bottom {
   text-align: center;
   padding: 25px 0 5px;
+  background: #fff;
+  position: relative;
 }
 
 /*Copyright & Credit*/
@@ -310,14 +313,7 @@ ul.links.inline li {
   border: 0;
   background: #fafafa;
   color: #fff;
-}
-
-.social-ribbon.front {
-  margin-bottom: 50px;
-  border: 0;
-  background: #fafafa;
-  color: #fff;
-  height: 10px;
+  position: relative;
 }
 
 
@@ -327,20 +323,6 @@ ul.links.inline li {
 
 .social-media > a {
   position: relative;
-  width: 64px;
-  height: 64px;
-  background: #00c4ff;
-  display: inline-block;
-  border-radius: 64px;
-  -moz-border-radius: 64px 64px 64px 64px;
-  -webkit-border-radius: 64px 64px 64px 64px;
-  color: #fff;
-  margin: 0px 20px;
-}
-
-.social-media.front > a {
-  position: relative;
-  top: -32px;
   width: 64px;
   height: 64px;
   background: #00c4ff;
@@ -693,7 +675,7 @@ ul.links.inline li {
 
 /* Page-title padding for mobile */
 div#page-title {
-	padding-top: 80px;
+	padding-top: 50px;
 }
 
 /*Frontpage parallax sections */

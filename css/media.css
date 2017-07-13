@@ -21,7 +21,7 @@
   }
 
   .frontpage-spacing {
-    padding-top: 150%;
+    padding-top: 100vh;
   }
  
   /*Candidates */
@@ -31,48 +31,6 @@
 	  width: 200px;
       margin: 0 auto 20px auto;
 	  display: block;
-  }
-
-  /*Social Media Footer */
-  .social-media > a {
-	  position: relative;
-	  width: 128px;
-	  height: 128px;
-	  background: #00c4ff;
-	  display: inline-block;
-	  border-radius: 128px;
-	  -moz-border-radius: 128px 128px 128px 128px;
-	  -webkit-border-radius: 128px 128px 128px 128px;
-	  color: #fff;
-	  margin: 0px 20px;
-  }
-
-  .social-media.front > a {
-	  position: relative;
-	  top: -64px;
-	  width: 128px;
-	  height: 128px;
-	  background: #00c4ff;
-	  display: inline-block;
-	  border-radius: 128px;
-	  -moz-border-radius: 128px 128px 128px 128px;
-	  -webkit-border-radius: 128px 128px 128px 128px;
-	  color: #fff;
-	  margin: 0px 20px;
-  }
-
-  .social-media > a > .fa {
-	  position: absolute;
-	  left: 20%;
-	  top: 20%;
-	  font-size: 90px;
-  }
-
-  .social-media > a > .fa-facebook {
-	  position: absolute;
-	  left: 28%;
-	  top: 20%;
-	  font-size: 90px;
   }
 
   .contact-message-feedback-form {
