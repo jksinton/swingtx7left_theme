@@ -27,18 +27,25 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <nav id="main-menu">
       <ul>
     {% else %}
       <ul>
     {% endif %}
     {% for item in items %}
-      {% if menu_level == 0 and item.is_expanded %}
-        <li>
-        <a href="{{ item.url }}" data-target="#" data-toggle="dropdown">{{ item.title }}</a>
+        {%
+          set classes = [
+            'menu-item',
+            item.is_expanded ? 'menu-item--expanded',
+            item.is_collapsed ? 'menu-item--collapsed',
+            item.in_active_trail ? 'menu-item--active-trail',
+            item.fly_left ? 'menu-item--flyleft',
+          ]
+        %}
+      {% if not item.url.isRouted() and 'nolink' in item.url.getUri() %}
+        <li{{ item.attributes }}><span>{{ item.title }}</span>
       {% else %}
         <li{{ item.attributes }}>
-        {{ link(item.title, item.url) }}
+        {{ link(item.title, item.url ) }}
       {% endif %}
       {% if item.below %}
         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
@@ -46,6 +53,5 @@
       </li>
     {% endfor %}
     </ul>
-    </nav>
   {% endif %}
 {% endmacro %}
