@@ -447,6 +447,10 @@ input[type="submit"]:hover {
 	height: 100vh;
 }
 
+#main-menu:not( .mm-menu ) {
+	display: none;
+}
+
 /*Breadcrumb*/
 
 .breadcrumb {
