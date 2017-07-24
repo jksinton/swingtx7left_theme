@@ -7,15 +7,30 @@
 
 	'use strict';
 
-	$(document).ready(function() {
-		$("#main-menu").mmenu({
-			"extensions": ["listview-justified"]	
-		});
-	});
+ /**
+   * Provides the off-canvas menu.
+   *
+   * @type {Drupal~behavior}
+   *
+   * @prop {Drupal~behaviorAttach} attach
+   *   Attaches the behavior for the off-canvas menu.
+   */
+    Drupal.behaviors.init_mmenu = {
+    	attach: function (context) {
+		  $(context).find('body').once('init_mmenu').each(function() {
+			if (typeof($.mmenu) != 'undefined') {
+				// Set up the off canvas menu.
+				$('#main-menu').mmenu({
+					"extensions": ["listview-justified"]	
+				});
+			}
+		  });
+		}
+  	};
 
 	var $menu = $("#main-menu").mmenu({
-	   //   options
-	   "extensions": ["listview-justified"]	
+		//   options
+		"extensions": ["listview-justified"]	
 	});
 	var $icon = $("#my-icon");
 	var API = $menu.data( "mmenu" );
@@ -57,4 +72,5 @@
 			target.css({ 'opacity': 0 });
 		}
 	});
+
 })(jQuery);
