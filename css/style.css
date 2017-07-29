@@ -685,7 +685,11 @@ div#page-title {
 
 /* Blog page */
 div.blog-row {
+  margin-bottom: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  /*border-bottom: 2px solid #002855;*/
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
 }
 
 .views-field-field-teaser-image img {
