@@ -1,7 +1,8 @@
 @media (min-width: 768px) {
   
   div#page-title {
-	padding-top: 50px;
+	padding-top: 60px;
+	text-align: center;
   }
   
   .brand.logo img {
