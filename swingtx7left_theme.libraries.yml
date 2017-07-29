@@ -56,7 +56,7 @@ global-components:
       css/media.css: {}
       css/hamburgers.css: {}
   js:
-    js/swingtx7left_theme.js: {}
+    js/script.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax
