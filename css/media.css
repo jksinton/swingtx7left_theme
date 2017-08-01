@@ -1,4 +1,16 @@
 @media (min-width: 768px) {
+
+  div.mailchimp-signup-subscribe-form {
+    width: 100%;
+  }
+  .mailchimp-signup-subscribe-form div.content {
+	margin: auto;
+	width: 30%;
+  }	  
+  form.mailchimp-signup-subscribe-form {
+	margin: auto;
+	width: 50%;
+  }	  
   
   div#page-title {
 	padding-top: 60px;

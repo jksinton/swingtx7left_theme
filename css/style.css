@@ -685,6 +685,12 @@ div#page-title {
 	text-align: center;
 }
 
+/* Mailchimp signup form */
+
+.mailchimp-signup-subscribe-form input {
+  display: block;
+}
+
 /* Blog page */
 div.blog-row {
   margin-bottom: 20px;

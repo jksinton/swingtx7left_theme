@@ -99,6 +99,27 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
 </header>
 <!--End Header & Navbar -->
 
+<!-- Top parallax background -->
+  {% if is_front %}  
+	<div class="parallax-1">
+      <div class="caption">
+		<span>
+		  It's time to bring progress to TX-07.</br>
+		  We have the ability.</br>
+		  You bring the momentum.
+		</span>
+      </div>
+	</div>
+  <div class="frontpage-spacing"></div>
+  {% endif %}
+<!-- End Top parallax background -->
+
+<!--Search-->
+  {% if is_front and page.search %}
+    {{ page.search }}
+  {% endif %}
+<!--End Search-->
+
 <!--Help-->
   {% if page.help %}
     <div class="container">
@@ -143,6 +164,26 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
 <!-- End layout -->
   
 
+<!-- Middle  parallax background -->
+{% if is_front %}  
+  <div class=" parallax-2">
+  </div>
+{% endif %}
+<!-- End Middle  parallax background -->
+
+<!-- Grid Panel One -->
+{% if is_front %}  
+      {% if page.grid_panel_one %}
+        <div class="frontpage-spacing-2"></div>
+        <div id="wrapper">
+      	  <div class="container">
+			{{ page.grid_panel_one }}
+		  </div>
+		</div>
+	  {% endif %}
+{% endif %}
+<!-- End  Grid Panel One-->
+
 <!-- Start Footer Ribbon -->
 {% if page.footer_menu %}
   <div class="footer-ribbon">
@@ -156,11 +197,19 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
 <!-- End Footer Ribbon -->
 
 <!-- Start Social Ribbon -->
+{% if is_front %}  
+  <div class="social-ribbon front">
+{% else %}  
   <div class="social-ribbon">
+{% endif %}  
     <div class="container">
       <div class="row">
         {% if show_social_icon %}
+			{% if is_front %}  
+				<div class="social-media front">
+    		{% else %}  
   				<div class="social-media">
+			{% endif %}  
         	{% if facebook_url %}
               		<a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-4"></i></a>
             	{% endif %}
@@ -194,9 +243,10 @@ Like looking at code? Join us https://github.com/jksinton/swingtx7left_theme
         </div>
         <div class="row">
         <div class="col-md-12 copy_credit">
+        <!-- <p class="copyright">Copyright &copy; {{ "now"|date("Y") }}. All rights reserved.</p> -->
         <p class="credit"><a href="/privacy-policy" target="_blank">Privacy Policy</a></p>
         <p class="credit"><a href="/disclaimer" target="_blank">Disclaimer</a></p>
-        <p class="copyright">Copyright &copy; {{ "now"|date("Y") }}. All rights reserved.</p>
+	
         {% if show_credit_link %}
           <p class="credit">Theme for <a href="https://www.drupal.org/8" target="_blank">Drupal 8</a></p>
         {% endif %}
